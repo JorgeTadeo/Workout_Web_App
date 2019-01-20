@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>fitness page</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script type="text/javascript" src="fitnessPage.js"></script>
+	<link rel="stylesheet" type="text/css" href="fitnessPage.css">
+</head>
+<body>
+
+  <div class="jumbotron">
+  <h1 class="display-4">Welcome to 5/3/1!</h1>
+  <p class="lead"> Please follow the steps to determine the right amount of weight, sets and reps.</p>
+  <hr class="my-4">
+  <p>This follows the 5/3/1 program and will do all your calculations for you.</p>
+  <a class="btn btn-primary btn-lg" href="https://www.t-nation.com/workouts/531-how-to-build-pure-strength" role="button">Learn more</a>
+  </div>
+
+	<div class="container">
+	<p><strong>1. </strong>Select your current cycle week</p>
+	<div class="buttonholder">
+	<button onclick="Week1()" class="btn btn-primary">Week 1</button>
+	<button onclick="Week2()" class="btn btn-primary">Week 2</button>
+	<button onclick="Week3()" class="btn btn-primary">Week 3</button>
+	<button onclick="Week4()" class="btn btn-primary">Week 4</button>
+	</div>
+	</div>
+
+	<div class="container">
+	<table>
+
+		<p><strong>2. </strong>Enter your training max and then your week number</p>
+		<tr>
+			<td><strong>Squat</strong></td>
+			<td><input id="Squat" type="text" size="2">
+				<button onclick="Snumbers(document.getElementById('Squat').value)" class="btn btn-primary">1</button>
+				<button onclick="Snumbers2(document.getElementById('Squat').value)" class="btn btn-primary">2</button>
+				<button onclick="Snumbers3(document.getElementById('Squat').value)" class="btn btn-primary">3</button>
+				<button onclick="Snumbers4(document.getElementById('Squat').value)" class="btn btn-primary">4</button>
+
+		</tr>
+		<tr>
+			<td><strong>Bench</strong></td>
+			<td><input id="Bench" type="text" size="2">
+				<button onclick="Bnumbers(document.getElementById('Bench').value)" class="btn btn-primary">1</button>
+				<button onclick="Bnumbers2(document.getElementById('Bench').value)" class="btn btn-primary">2</button>
+				<button onclick="Bnumbers3(document.getElementById('Bench').value)" class="btn btn-primary">3</button>
+				<button onclick="Bnumbers4(document.getElementById('Bench').value)" class="btn btn-primary">4</button>
+		</tr>
+		<tr>
+			<td><strong>Deadlift</strong></td>
+			<td><input id="Dead" type="text" size="2">
+				<button onclick="Dnumbers(document.getElementById('Dead').value)" class="btn btn-primary">1</button>
+				<button onclick="Dnumbers2(document.getElementById('Dead').value)" class="btn btn-primary">2</button>
+				<button onclick="Dnumbers3(document.getElementById('Dead').value)" class="btn btn-primary">3</button>
+				<button onclick="Dnumbers4(document.getElementById('Dead').value)" class="btn btn-primary">4</button>
+		</tr>
+		<tr>
+			<td><strong>Overhead Press</strong></td>
+			<td><input id="Over" type="text" size="2">
+				<button onclick="Onumbers(document.getElementById('Over').value)" class="btn btn-primary">1</button>
+				<button onclick="Onumbers2(document.getElementById('Over').value)" class="btn btn-primary">2</button>
+				<button onclick="Onumbers3(document.getElementById('Over').value)" class="btn btn-primary">3</button>
+				<button onclick="Onumbers4(document.getElementById('Over').value)" class="btn btn-primary">4</button>
+		</tr>
+	</table>
+	</div>
+	<p><strong>3. </strong>Your working weight, set and reps</p>
+	<p id="Week"></p>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm">
+				<p><strong>Squat</strong></p>
+		<table>
+		<tr>
+			<th>Reps</th>
+			<th>Weight</th>
+		</tr>
+		<tr>
+			<td class="1 q"></td>
+			<td id="S65"></td>
+		</tr>
+		<tr>
+			<td class="1 s"></td>
+			<td id="S75"></td>
+		</tr>
+		<tr>
+			<td class="+1"></td>
+			<td id="S85"></td>
+		</tr>
+	</table>
+			</div>
+
+		<div class="col-sm">
+			<p><strong>Bench</strong></p>
+	<table>
+		<tr>
+			<th>Reps</th>
+			<th>Weight</th>
+		</tr>
+		<tr>
+			<td class="1 q"></td>
+			<td id="B65"></td>
+		</tr>
+		<tr>
+			<td class="1 s"></td>
+			<td id="B75"></td>
+		</tr>
+		<tr>
+			<td class="+1"></td>
+			<td id="B85"></td>
+		</tr>
+	</table>
+		</div>
+
+		<div class="col-sm">
+			<p><strong>Deadlift</strong></p>
+	<table>
+		<tr>
+			<th>Reps</th>
+			<th>Weight</th>
+		</tr>
+		<tr>
+			<td class="1 q"></td>
+			<td id="D65"></td>
+		</tr>
+		<tr>
+			<td class="1 s"></td>
+			<td id="D75"></td>
+		</tr>
+		<tr>
+			<td class="+1"></td>
+			<td id="D85"></td>
+		</tr>
+	</table>
+		</div>
+
+	<div class="col-sm">	
+		<p><strong>Overhead Press</strong></p>
+	<table>
+		<tr>
+			<th> Reps </th>
+			<th> Weight </th>
+		</tr>
+		<tr>
+			<td class="1 q"></td>
+			<td id="O65"></td>
+		</tr>
+		<tr>
+			<td class="1 s"></td>
+			<td id="O75"></td>
+		</tr>
+		<tr>
+			<td class="+1"></td>
+			<td id="O85"></td>
+		</tr>
+	</table>
+	</div>
+
+</div>
+</div>
+</body>
+</html>
