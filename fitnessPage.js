@@ -166,3 +166,36 @@ function round(input) {
 		return document.getElementById("result").innerHTML= 5;
 	}
 }
+
+/* Group function calls*/
+function group1(squat,bench,deadlift,overheadpress){
+	Snumbers(squat);
+	Bnumbers(bench);
+	Dnumbers(deadlift);
+	Onumbers(overheadpress);
+	Week1();
+};
+
+function group2(squat,bench,deadlift,overheadpress){
+	Snumbers2(squat);
+	Bnumbers2(bench);
+	Dnumbers2(deadlift);
+	Onumbers2(overheadpress);
+	Week2();
+};
+
+function group3(squat,bench,deadlift,overheadpress){
+	Snumbers3(squat);
+	Bnumbers3(bench);
+	Dnumbers3(deadlift);
+	Onumbers3(overheadpress);
+	Week3();
+};
+
+function group4(squat,bench,deadlift,overheadpress){
+	Snumbers4(squat);
+	Bnumbers4(bench);
+	Dnumbers4(deadlift);
+	Onumbers4(overheadpress);
+	Week4();
+};
