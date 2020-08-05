@@ -191,7 +191,7 @@ session_start();
 <body id="darkmode">
 
 	<nav class="navbar navbar-expand-sm navbar-dark bg-primary nav-primary" id="nav">
-	  <a class="navbar-brand no-right-margin" href="calculatorbeta.php"><img id="logo" src="logo2.png" ></a>
+	  <a class="navbar-brand no-right-margin" href="calculatorbeta.php"><img id="logo" src="Images/logo2.png" ></a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 	  </button>
